@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(39, 48, 47);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.card_7{
+    padding-top: 145px;
+}
+.card{
+    width: auto;
+    height: 520px;
+    border: none;
+    border-radius: 10px;
+}
+.card:hover{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+.card img{
+    height: 40%;
+    border-radius: 10px 10px 0 0;
+}
+.card .card-body{
+    text-align: center;
+    padding: 0%;
+}
+.card .card-body .card-title{
+    font-weight: bold;
+    color: rgb(255, 28, 160);
+}
+.card .card-body span{
+   cursor: pointer;
+   position: relative;
+   top: 25px;
+}
+.card .card-body .card-text{
+    font-weight: bolder;
+    padding-top: 1.4rem;
+}
+.card .card-body p{
+    font-size: .9rem;
+    padding: 1rem;
+    color: gray;
+}
+.card .tailend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  rgb(255, 28, 160);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 30%;
+    color: #ffffff;
+}
+.card .tailend .sub_tail{
+    margin: 1rem;
+    position: relative;
+}
+.card .tailend .sub_tail h2{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding-top: 4rem;
+}
+.card .tailend .sub_tail h2::after:nth-child(2){
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    right: -20px;
+    border-right: 1px solid rgba(0,0,0,.2);
+    height: 95px;
+}
+.card .tailend .sub_tail h2 span{
+    font-size: .9rem;
+    position: relative;
+    top: -5px;
+}
+.card .tailend .sub_tail p{
+    color: #000000;
+    position: relative;
+    top: -29px;
+    color: #ffffff;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination ul{
+    position: relative;
+    bottom: -60px;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pagination ul li a{
+    font-weight: bold;
+    color: black;
+    background: #ffffff;
+    width: 2vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid grey;
+}
+.pagination ul li a:hover{
+    transition: all .5s ease-in-out;
+    background: rgb(151, 218, 235);
+}
+
+@media (max-width: 996px){
+    
+    .card_7{
+        padding-top: 20px;
+    }
+    .card{
+        margin: 1rem;
+        max-height: 88%;
+    }
+    .pagination ul{
+        position: relative;
+        bottom: -10px;
+        left: 5%;
+    }
+    .pagination ul li a{
+        width: 7vw;
+        height: 6vh;
+    }
+}
+
+@media (max-width: 496px){
+    
+    .card{
+        margin: 2rem;
+    }
+}

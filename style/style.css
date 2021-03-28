@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(120deg, rgb(192, 58, 80),rgb(0, 204, 255));
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    position: relative;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,20%);
+    width: 80%;
+}
+.card_body{
+    background: #ffffff;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .9rem;
+    flex-wrap: nowrap;
+}
+.card_left{
+    width: 100%;
+    padding: .9rem  ;
+}
+.card_left .img img{
+    width: 50vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.4);
+}
+.card_left .card_date_icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_date_icons .date{
+    padding: 0 0 2rem 0;
+    color: grey;
+}
+.card_date_icons .date span{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.card_date_icons .date p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card_date_icons .card_icons a i{
+    font-size: 2rem;
+    padding: .9rem;
+    color: rgb(73, 63, 63);
+}
+.card_right{
+    padding: .9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -5%);
+}
+.pill_button{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 183, 255);
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3rem;
+    border-radius: 40px;
+}
+.pill_button img{
+    width: 30px;
+    border-radius: 50%;
+}
+.pill_button p{
+    font-weight: bold;
+}
+.card_right span{
+    color: rgb(24, 20, 20);
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination ul{
+    position: relative;
+    bottom: -60px;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.pagination ul li a{
+    font-weight: bold;
+    color: black;
+    background: #ffffff;
+    width: 2vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid grey;
+}
+.pagination ul li a:hover{
+    transition: all .5s ease-in-out;
+    background: rgb(151, 218, 235);
+}
+
+@media (max-width: 1440px){
+    .card_right{
+        padding: .9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, 0%);
+    color: rgb(0, 0, 0);
+    }
+}
+@media (max-width: 1250px){
+    body{
+        background: url("../assets/wallpaper.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .card_body{
+        background: #ffffff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .9rem;
+        flex-wrap: wrap;
+    }
+    .pagination{
+        padding-bottom: 2rem;
+    }
+    .pagination ul li a{
+        width: 3vw;
+        height: 4vh;
+    }
+}
+@media (max-width: 600px){
+    .card_date_icons .card_icons a i{
+        font-size: 1.3rem;
+        padding: .2rem;
+        color: rgb(73, 63, 63);
+    }
+}
+@media (max-width: 500px){
+    
+    .card_date_icons .card_icons{
+        display: none;
+        font-size: 1.5rem;
+        padding: .2rem;
+        color: rgb(73, 63, 63);
+    }
+    .pagination{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-50%);
+    }
+    .pagination ul li a{
+        width: 6vw;
+        height: 4vh;
+    }
+}
